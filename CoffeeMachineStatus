@@ -1,0 +1,17 @@
+public enum CoffeeMachineStatus {
+    BUY("buy"),
+    FILL("fill"),
+    TAKE("take"),
+    REMAINING("remaining"),
+    EXIT("exit");
+
+    public String getStatusName() {
+        return statusName;
+    }
+
+    private final String statusName;
+
+    private CoffeeMachineStatus(String str) {
+        this.statusName = str;
+    }
+}
